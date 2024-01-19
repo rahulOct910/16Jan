@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing balls</title>
+    <style>
+        body{
+            background: black;
+        }
+        .common{
+            width:90px;
+            height: 90px;
+            border-radius: 800px;
+            display: inline-block;
+            animation: bnc;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        
+        .b1{
+            background-color: rgb(240, 157, 32);
+            animation-delay: 0s;
+        }
+        .b2{
+            background-color: rgb(161, 19, 243);
+            animation-delay: 0.25s;
+
+        }
+        .b3{
+            background-color: rgb(209, 240, 32);
+            animation-delay: 0.8s;
+
+        }
+        .b4{
+            background-color: rgb(255, 22, 255);
+            animation-delay: 0.52s;
+
+        }
+        .b5{
+            background-color: rgb(240, 32, 32);
+            animation-delay: 0.9s;
+
+        }
+        .b6{
+            background-color: rgb(74, 155, 20);
+            animation-delay: 0.46s;
+
+        }
+        .b7{
+            background-color: FireBrick;
+            animation-delay: 0.23s;
+
+        }
+        .b8{
+            background-color: OrangeRed;
+            animation-delay: 0.75s;
+
+        }
+        .b9{
+            background-color: SlateBlue ;
+            animation-delay: 0.58s;
+
+        }
+        .b10{
+            background-color:MediumSpringGreen ;
+            animation-delay: 0.8s;
+
+        }
+        
+       @keyframes bnc{
+        0%{
+            transform: translatey(0px);
+            opacity: 0;
+        }
+        25%{
+            background-color: rgb(42, 50, 165);
+             opacity: 1;
+
+        }
+        40%{
+            background-color: OliveDrab;
+        }
+        50%{
+            background-color: Crimson;
+        }
+        50%{
+            background-color: gold;
+        }
+        60%{
+            background-color: Magenta;
+        }
+        70%{
+            background-color: DarkGreen;
+        }
+        70%{
+            background-color: MediumOrchid;
+        }
+        100%{
+            transform: translatey(500px);
+            /* opacity: 1; */
+
+
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="common b1"></div>
+    <div class="common b2"></div>
+    <div class="common b3"></div>
+    <div class="common b4"></div>
+    <div class="common b5"></div>
+    <div class="common b6"></div>
+    <div class="common b7"></div>
+    <div class="common b8"></div>
+    <div class="common b9"></div>
+    <div class="common b10"></div>
+</body>
+</html>
